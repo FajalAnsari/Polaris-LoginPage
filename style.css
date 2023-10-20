@@ -22,6 +22,14 @@ body {
     height: 100vh;
 }
 
+.container #text-logo{
+    position: absolute;
+    z-index: 99;
+    top: 107px;
+    left: 441px;
+
+}
+
 
 /* Left side Slider  */
 .box-slider {
@@ -46,7 +54,7 @@ body {
 
 /* Hide the images by default */
 .mySlides {
-    /* display: none; */
+    display: none;
 }
 
 .mySlides {}
@@ -54,10 +62,14 @@ body {
 #img-shadow {
     background: linear-gradient(119deg, rgba(19, 100, 161, 0.95) -1.09%, rgba(217, 217, 217, 0.00) 90.31%);
     border-bottom: 3px solid #3CAAE0 !important;
-    height: 405px;
+    height: 420px;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px
 }
 #img-shadow img{
     object-fit: contain;
+    max-width: 100%;
+    border-radius: 5px 5px 0px 0px
 }
 /* Next & previous buttons */
 .prev {
@@ -107,24 +119,32 @@ body {
 }
 
 /* Caption text */
-.crousel-footer {
+.carousel-footer {
     padding: 21px !important;
 
 }
 
-.crousel-footer h4 {
+.carousel-footer h4 {
     color: #3CAAE0;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     font-weight: 400;
 }
 
-.crousel-footer p {
+.carousel-footer p {
     font-size: 14px;
     margin-top: 5px;
     text-align: left;
     color: rgba(103, 103, 103, 0.80);
-    ;
+    
+}
+
+#readmore{
+    text-align: left;
+}
+ a{
+    text-decoration: none;
+
 }
 
 /* Number text (1/3 etc) */
@@ -266,6 +286,9 @@ a{
 
 @media (max-width: 600px) {
     .box-slider.slider-div {
+        display: none;
+    }
+    .container #text-logo{
         display: none;
     }
 }
