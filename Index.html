@@ -14,17 +14,27 @@
     <div class="container">
         <div class="empty">
             <img id="text-logo" src="./Images/PolarisText.svg" alt="loog-text">
+           
             <div class="box-slider slider-div">
                 <!-- carousel starts here -->
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
                     <div id="slider_content">
+
+                        <div class="skeleton">
+                            <div class="card__image"></div>
+                            <div class="card__content">
+                              <h2></h2>
+                              <p></p>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- Next and previous buttons -->
                     <div class="prev-span">
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="prev next-button" onclick="plusSlides(-1)">&#10094;</a>
                     </div>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="next next-button" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <br>
             </div>

@@ -44,6 +44,10 @@ function save_data(result) {
   }
 
   document.getElementById("slider_content").innerHTML = div;
+  var next_button = document.getElementsByClassName('next-button')
+  for(var j=0; j< next_button.length; j++){
+    next_button[j].style.display = 'block';
+  }
   showSlides(slideindex);
 }
 
