@@ -133,11 +133,11 @@ body {
     color: #3CAAE0;
     font-size: 18px;
     text-align: left;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .carousel-footer p {
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 5px;
     text-align: left;
     color: rgba(103, 103, 103, 0.80);
@@ -198,10 +198,7 @@ body {
     }
 }
 
-
-
-
-
+/* skeleton  */
 
 
 /* Right Side Login Form  */

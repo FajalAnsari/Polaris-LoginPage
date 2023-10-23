@@ -5,7 +5,7 @@ function fetchdata() {
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
-  var urlencoded = new URLSearchParams();
+  // var urlencoded = new URLSearchParams();
 
   var requestOptions = {
     method: 'POST',
@@ -27,7 +27,7 @@ function save_data(result) {
 
   for (var i = 0; i < data.length; i++) {
     var description = data[i].description;
-    var truncatedDescription = description.length > 220 ? description.slice(0, 220) + '...' : description;
+    var truncatedDescription = description.length > 245 ? description.slice(0, 245) + '...' : description;
   
     div += '<div class="mySlides fade">' +
       '<div class="numbertext">' + k + ' / ' + data.length + '</div>' +
