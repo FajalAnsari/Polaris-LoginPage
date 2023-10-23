@@ -71,7 +71,7 @@ function showSlides(number) {
   clearTimeout(timeout);
   timeout = setTimeout(function () {
     showSlides(slideindex + 1);
-  }, 6000);
+  }, 2000);
 }
 
 function plusSlides(n) {
